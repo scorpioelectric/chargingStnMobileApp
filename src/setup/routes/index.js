@@ -24,21 +24,8 @@ export const routeImage = routeApi
 
 
 export const routes = {
-  home: {
-    name: 'home',
-    path: 'home',
-    screen: HomeStack,
-    navigationOptions: {
-      tabBarLabel: 'Home',
-      tabBarIcon: ({ tintColor }) => <Icon
-        name={'home'}
-        size={font(23)}
-        color={tintColor}
-      />,
-    }
-  },
 
-  crates: {
+ /* crates: {
     name: 'crates',
     path: 'crates',
     screen: Crates,
@@ -50,7 +37,7 @@ export const routes = {
         color={tintColor}
       />,
     }
-  },
+  }, 
 
   whatsNew: {
     name: 'whatsNew',
@@ -64,10 +51,10 @@ export const routes = {
         color={tintColor}
       />,
     }
-  },
+  }, */
 
   account: {
-    name: 'account',
+    name: 'Account',
     path: 'account',
     screen: Account,
     navigationOptions: {
@@ -78,7 +65,21 @@ export const routes = {
         color={tintColor}
       />,
     }
-  }
+  },
+
+  home: {
+    name: 'home',
+    path: 'home',
+    screen: HomeStack,
+    navigationOptions: {
+      tabBarLabel: 'Home',
+      tabBarIcon: ({ tintColor }) => <Icon
+        name={'home'}
+        size={font(23)}
+        color={tintColor}
+      />,
+    }
+  },
 }
 
 const AppNavigator = createDrawerNavigator(getRoutesForStack(routes), {

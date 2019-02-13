@@ -3,12 +3,12 @@ import { StyleSheet } from 'react-native'
 
 // UI Imports
 import { navigationTopHeight, blockPadding, font } from '../../../ui/common/responsive'
-import { primary, white } from '../../../ui/common/colors'
+import { primary, white, black } from '../../../ui/common/colors'
 
 export default StyleSheet.create({
   container: {
     elevation: 3,
-    backgroundColor: primary,
+    backgroundColor: white,
     height: navigationTopHeight,
     flexDirection: 'row',
     alignItems: 'center',
@@ -26,11 +26,11 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   title: {
-    color: white,
+    color: black,
     fontSize: font(16)
   },
   menu : {
-    color: white,
+    color: black,
     alignItems : 'center',
     margin : 10,
     fontSize : font(23)

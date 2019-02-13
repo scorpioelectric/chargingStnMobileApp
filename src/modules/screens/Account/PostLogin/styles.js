@@ -1,5 +1,5 @@
 // Imports
-import { StyleSheet } from 'react-native'
+import { StyleSheet, StatusBar } from 'react-native'
 
 // UI Imports
 import { white } from '../../../../ui/common/colors'
@@ -9,7 +9,8 @@ import { deviceWidth, deviceHeight } from '../../../../ui/common/responsive'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingTop: StatusBar.currentHeight,
   },
   heroContainer: {
     flex: 1,

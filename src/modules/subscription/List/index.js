@@ -41,7 +41,7 @@ class Crates extends PureComponent {
                   onSuccessUnsubscribe={this.onSuccessUnsubscribe}
                 />
               ))
-            : <EmptyMessage message={'You are not subscribed to any crate yet'} />
+            : <EmptyMessage message={'You have not made any reservations yet'} />
         }
       </View>
     )

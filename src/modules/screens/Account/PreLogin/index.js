@@ -5,7 +5,7 @@ import Body from '../../../common/Body'
 import NavigationTop from '../../../common/NavigationTop'
 import ActionIcon from '../../../../ui/icon/ActionIcon'
 // Assets
-import heroImage from '../../../../../assets/images/cover.jpg'
+import scorpImage from '../../../../../assets/images/scorpio.jpg'
 import StatusBar from 'react-native'
 // UI Imports
 import { TabBar, TabContent } from '../../../../ui/tab'
@@ -46,7 +46,7 @@ class PreLogin extends PureComponent {
       <View style={styles.container}>
       <Body>
       <NavigationTop
-        title="Crate"
+        title="Login"
         rightIcon={
           <ActionIcon
             icon={'info-outline'}
@@ -57,9 +57,10 @@ class PreLogin extends PureComponent {
         {/* Hero section */}
         <View style={styles.heroContainer}>
           <Image
-            source={heroImage}
+            source={scorpImage}
             resizeMode={'cover'}
             style={styles.hero}
+           
           />
 
           <TabBar

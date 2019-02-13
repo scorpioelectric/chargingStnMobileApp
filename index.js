@@ -5,8 +5,8 @@ import App from './src/setup'
 import { name as appName } from './app.json'
 
 // React Native
-//AppRegistry.registerComponent(appName, () => App)
+AppRegistry.registerComponent(appName, () => App)
 
 
 //Expo
-AppRegistry.registerComponent('main', () => App)
+//AppRegistry.registerComponent('main', () => App)

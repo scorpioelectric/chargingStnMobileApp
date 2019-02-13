@@ -3,7 +3,7 @@ import { StyleSheet, StatusBar } from 'react-native'
 
 // UI Imports
 import { white } from '../../../../ui/common/colors'
-import { deviceWidth, deviceHeight } from '../../../../ui/common/responsive'
+import { blockPadding, deviceWidth, deviceHeight } from '../../../../ui/common/responsive'
 
 // Styles
 export default StyleSheet.create({
@@ -18,6 +18,7 @@ export default StyleSheet.create({
     backgroundColor: white
   },
   hero: {
+    flex: 1,
     width: deviceWidth,
     height: deviceHeight / 3
   }

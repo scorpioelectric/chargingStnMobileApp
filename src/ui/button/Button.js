@@ -5,7 +5,7 @@ import { StyleSheet, View, Text } from 'react-native'
 
 // UI Imports
 import { buttonPadding, blockMarginHalf, buttonRadius, buttonHeight, font } from '../common/responsive'
-import { primary, secondary, white, grey2, grey4 } from '../common/colors'
+import { primary, secondary, white, grey2, grey4, buttonDef } from '../common/colors'
 import Icon from '../icon/Icon'
 import Touchable from '../touchable/Touchable'
 
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
 
 const themes = {
   primary: {
-    background: primary,
+    background: buttonDef,
     text: white
   },
   secondary: {
