@@ -45,7 +45,7 @@ class List extends PureComponent {
                     />
                   )) }
                 </ScrollView>
-              : <EmptyMessage message={'No crate is available at the moment'} />
+              : <EmptyMessage message={'No charging station is available at the moment'} />
         }
       </View>
     )

@@ -1,10 +1,11 @@
 // Imports
 import React from 'react'
 import { createDrawerNavigator, createAppContainer } from 'react-navigation'
+import { StatusBar } from 'react-native'
 
 // UI Imports
 import { font, scalable } from '../../ui/common/responsive'
-import { primary, grey2, white } from '../../ui/common/colors'
+import { primary, grey2, white, black } from '../../ui/common/colors'
 import Icon from '../../ui/icon/Icon'
 
 // App Imports
@@ -12,9 +13,6 @@ import config from '../../setup/config'
 import { getRoutesForStack } from '../../setup/helpers'
 import Crates from '../../modules/screens/Crates'
 import Account from '../../modules/screens/Account'
-import Splash from '../../modules/screens/Splash'
-import HomeStack from './home'
-import ProductStack from './product'
 import { Slider } from 'react-native-gesture-handler';
 
 // API
@@ -25,12 +23,12 @@ export const routeImage = routeApi
 
 export const routes = {
 
- /* crates: {
-    name: 'crates',
+  crates: {
+    name: 'Charging Stations',
     path: 'crates',
     screen: Crates,
     navigationOptions: {
-      tabBarLabel: 'Crates',
+      tabBarLabel: 'Charging Stations',
       tabBarIcon: ({ tintColor }) => <Icon
         name={'shopping-basket'}
         size={font(23)}
@@ -39,7 +37,7 @@ export const routes = {
     }
   }, 
 
-  whatsNew: {
+ /* whatsNew: {
     name: 'whatsNew',
     path: 'whats-new',
     screen: ProductStack,
@@ -67,7 +65,7 @@ export const routes = {
     }
   },
 
-  home: {
+ /* home: {
     name: 'home',
     path: 'home',
     screen: HomeStack,
@@ -79,14 +77,15 @@ export const routes = {
         color={tintColor}
       />,
     }
-  },
-}
+  }, */
+} 
 
 const AppNavigator = createDrawerNavigator(getRoutesForStack(routes), {
   drawerType : Slider,
   initialRouteName: routes.account.name,
-  navigationOptions: { tabBarVisible: true },
-
+  navigationOptions: { tabBarVisible: true, style : { topPadding : StatusBar.currentHeight
+  }},
+ 
 })
 
 export default createAppContainer(AppNavigator)

@@ -18,7 +18,7 @@ export default StyleSheet.create({
     backgroundColor: white
   },
   hero: {
-    flex: 1,
+    flex: 0,
     width: deviceWidth,
     height: deviceHeight / 3
   }

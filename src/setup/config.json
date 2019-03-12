@@ -1,6 +1,6 @@
 {
   "url": {
-    "api": "http://ec2-52-74-21-147.ap-southeast-1.compute.amazonaws.com:8000/"
+    "api": "http://3.1.184.55:8000/"
   },
   "message": {
     "error": {

@@ -1,8 +1,15 @@
 {
   "name": "crate",
   "displayName": "crate",
-  "expo": 
-  { 
-    "sdkVersion" : "32.0.0"
+  "expo": {
+    "sdkVersion": "32.0.0",
+    "name": "ScorpioElectric",
+    "slug": "scorpioelectric",
+    "version": "0.0.1",
+    "description": "",
+    "platforms": [
+      "android",
+      "ios"
+    ]
   }
 }

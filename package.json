@@ -1,5 +1,5 @@
 {
-  "name": "crate",
+  "name": "ScorpioElectric",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,8 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@expo/vector-icons": "latest",
     "axios": "0.18.0",
     "expo": "^32.0.0",
+    "expo-cli": "^2.11.7",
     "gql-query-builder": "1.0.6",
     "prop-types": "15.6.2",
     "react": "16.6.3",

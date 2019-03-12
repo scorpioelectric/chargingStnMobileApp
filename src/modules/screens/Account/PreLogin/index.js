@@ -44,7 +44,6 @@ class PreLogin extends PureComponent {
     return (
       
       <View style={styles.container}>
-      <Body>
       <NavigationTop
         title="Login"
         rightIcon={
@@ -80,7 +79,7 @@ class PreLogin extends PureComponent {
             signup: <Signup onSuccessRegister={this.onSuccessRegister} />
           }}
         />
-          </Body>
+          
       </View >
     
     )

@@ -22,7 +22,7 @@ class Account extends PureComponent {
     return (
       <View style={styles.container}>
         <Body>
-          <KeyboardAwareScrollView>
+          <KeyboardAwareScrollView enableOnAndroid={true}>
             { isAuthenticated ? <PostLogin /> : <PreLogin /> }
           </KeyboardAwareScrollView>
         </Body>
